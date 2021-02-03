@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Element } from "react-scroll";
 
 const Container = styled.div`
   height: 800px;
@@ -10,9 +11,11 @@ const Title = styled.span`
 
 const Apage = () => {
   return (
-    <Container>
-      <Title>Area 'A'</Title>
-    </Container>
+    <Element name="Apage">
+      <Container>
+        <Title>Area 'A'</Title>
+      </Container>
+    </Element>
   );
 };
 

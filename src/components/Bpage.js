@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Element } from "react-scroll";
 
 const Container = styled.div`
   height: 800px;
@@ -10,9 +11,11 @@ const Title = styled.span`
 
 const Bpage = () => {
   return (
-    <Container>
-      <Title>Area 'B'</Title>
-    </Container>
+    <Element name="Bpage">
+      <Container>
+        <Title>Area 'B'</Title>
+      </Container>
+    </Element>
   );
 };
 
